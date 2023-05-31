@@ -1,0 +1,68 @@
+/*ROOT*/
+:root {
+    --logo-brand-color: #4d5ae5;
+    --pressed-state-color: #404bbf;
+    --body-brand-color: #2e2f42;
+    --success-messages-color: #31d0aa;
+    --body-text-color: #434455;
+    --helper-text-color: #8e8f99;
+    --subtle-background-color: #e7e9fc;
+    --light-mode-background-color: #f4f4fd;
+    --overlay-color: #2e2f42;
+    --hero-color: #2e2f42;
+    --page-background-color: #ffffff;
+    --modal-background-color: #fcfcfc;
+    --transition-duration: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+/*GENERAL*/
+h1,
+h2,
+h3,
+h4,
+p {
+    margin-top: 0;
+    margin-bottom: 0;
+
+}
+
+ul {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+    list-style: none;
+}
+
+img {
+    display: block;
+}
+
+button{
+    cursor: pointer;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    background-color: var(--page-background-color);
+}
+
+.list {
+    list-style: none;
+}
+
+.link {
+    text-decoration: none;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+/*HEADER*/
