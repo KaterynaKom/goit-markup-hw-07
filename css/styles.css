@@ -252,6 +252,11 @@ body {
 
 /* TABLET HEADER */
 @media screen and (min-width: 768px) {
+    .page-header {
+            padding-top: 16px;
+            padding-bottom: 16px;
+    }
+
     .page-navigation {
         display: flex;  
     }
@@ -302,6 +307,96 @@ body {
         line-height: 1.5;
         letter-spacing: 0.02em; 
         color: var(--body-text-color);
-        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
 }
+
+@media screen and (min-width: 1200px) {
+    .logo-header {
+        margin-right: 76px;
+    }
+    .menu-link {
+        padding: 24px 0;
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        }
+.contact-info {
+         flex-direction: row;
+         gap: 40px;
+         margin-left: auto;
+}
+}
+
+/* HERO */
+.hero {
+        max-width: 1440px;
+        padding-top: 112px;
+        padding-bottom: 112px;
+        margin-left: auto;
+        margin-right: auto;
+        background-image: linear-gradient(to right, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/back-groudn/mobile/Dark-bg.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+}
+.main-title {
+        margin-bottom: 72px;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 36px;
+        line-height: 1.1;
+        text-align: center;
+        letter-spacing: 0.02em;
+        color: var(--page-background-color);
+        text-transform: capitalize;
+}
+.order-button {
+    display: flex;
+        min-width: 169px;
+        font-size: 16px;
+        line-height: 1.5;
+        padding: 16px 32px;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        letter-spacing: 0.04em;
+        color: var(--page-background-color);
+        background: var(--logo-brand-color);
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+        border-radius: 4px;
+        border: transparent;
+        cursor: pointer;
+        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media screen and (min-width: 768px) {
+    .hero{
+        background-image: linear-gradient(to right, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/back-groudn/tablet/Dark-bg.jpg);
+    }
+    .main-title {
+            width: 496px;
+            font-size: 56px;
+            line-height: 1.07;
+            margin-bottom: 36px;
+            text-transform: none;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .hero {
+            background-image: linear-gradient(to right, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/back-groudn/Desk/people-office\ 1.jpg);
+            padding-top: 188px;
+            padding-bottom: 188px;
+        }
+    button:hover,
+    button:focus {
+           background-color: var(--pressed-state-color);
+
+        }
+    .main-title {
+            font-weight: 700;
+            font-size: 56px;
+            line-height: 1.07;
+            letter-spacing: 0.02em;
+            max-width: 496px;
+            margin-bottom: 48px;
+            }
+}   
